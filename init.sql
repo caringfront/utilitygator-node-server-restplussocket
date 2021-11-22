@@ -1,11 +1,12 @@
-CREATE TABLE users (
+CREATE TABLE posts (
   ID SERIAL PRIMARY KEY,
-  firstname VARCHAR(255) NOT NULL,
-  lastname VARCHAR(255) NOT NULL,
-  email VARCHAR(255) NOT NULL,
-  username VARCHAR(255) NOT NULL,
-  password VARCHAR(255) NOT NULL
+  name VARCHAR(255) NOT NULL,
+  deviceId VARCHAR(255) NOT NULL,
+  floatlat DOUBLE PRECISION,
+  floatlon DOUBLE PRECISION,
+  incidenttype VARCHAR(255) NOT NULL,
+  title VARCHAR(255) NOT NULL
 );
 
-INSERT INTO users (firstname, lastname, email, username, password)
-VALUES  ('', '', '', '', '');
+INSERT INTO posts (name, deviceId, floatLat, floatlon, incidenttype, title)
+VALUES  ('', '', , , '', '');
